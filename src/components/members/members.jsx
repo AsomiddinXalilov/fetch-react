@@ -15,7 +15,7 @@ function Users({setUserId}) {
 
     return (
         <div className='container__item'>
-            <h2 className='container__all'>users</h2>
+            <h2 className='container__all'>users: </h2>
             {users.length &&
                 users.map(item => (
                     <div className='container__little--item'

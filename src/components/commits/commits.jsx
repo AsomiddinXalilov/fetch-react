@@ -15,7 +15,7 @@ function Commits({postId}) {
 
     return (
         <div className='container__item'>
-            <h2 className='container__all'>posts</h2>
+            <h2 className='container__all'>posts: </h2>
             {commits.length &&
                 commits.map(item => (
                     postId === item.postId &&

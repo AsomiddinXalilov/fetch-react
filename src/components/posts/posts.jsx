@@ -10,7 +10,6 @@ function Posts({ userId, setPostId }) {
         fetch(`https://jsonplaceholder.typicode.com/posts`)
             .then(response => response.json())
             .then(p => {
-                console.log(p);
                 setPosts(p)
             })
 
@@ -20,7 +19,7 @@ function Posts({ userId, setPostId }) {
         <div className='container__item'>
             <h2 className='container__all'>posts</h2>
             {
-                posts.length && posts.map(item => (
+                posts.length && posts.map((item) => (
                     userId === item.userId &&
                     <div className='container__little--item'
                         key={item.id}
